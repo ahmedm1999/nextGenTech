@@ -1,0 +1,118 @@
+.e-comm-grid {
+    margin-top: 5rem;
+}
+.section-box {
+    background-color: #0e141e;
+    margin-top: 5rem;
+}
+.section-box .new-sec h2{
+    color: #9d8df7;
+    font-size: 40px;
+    font-weight: 600;
+}
+.section-box .new-sec .sec-text {
+    color: rgba(255, 255, 255, 0.7) ;
+    padding: 5rem 6rem;
+    line-height: 2rem;
+}
+.section-box .new-sec .row{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.section-box .new-sec .sec-text p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.section-box .new-sec .sec-text ol li {
+    font-size: 19px;
+    font-weight: 600;
+}
+.section-box .new-sec .sec-img {
+    padding: 0;
+}
+.section-box .new-sec .sec-img img{
+    width: 100% ;
+    height: 600px;
+    object-fit: cover
+}
+
+@media (max-width: 700px) {
+    .section-box .new-sec .sec-img img {
+        width: 100%;
+        height: 327px;
+    }
+    .section-box .new-sec .sec-text {
+        padding: 2rem 1rem ;
+    }
+}
+/*  -------------------- */ 
+.why-choose-grid {
+    display: grid; 
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: auto;
+    margin-top: 1rem;
+}
+.why-choose-grid > .grid-item:nth-child(1) {
+    grid-column: 2/9;
+    grid-row: 1/2;
+}
+.why-choose-grid > .grid-item:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    grid-column: 1/10;
+    grid-row: 2/3;
+}
+.why-choose-grid > .grid-item:nth-child(1) p {
+    color: #9d8df7;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.why-choose-grid > .grid-item:nth-child(2) .grid-card {
+    background-color: #0e141e;
+    padding: 1rem ;
+    border-radius: 4px ;;
+    width: 320px;
+    margin: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.why-choose-grid > .grid-item:nth-child(2) .grid-card .card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-choose-grid > .grid-item:nth-child(2) .grid-card .card-img img {
+    width: 100px ;
+    height: 100px;
+}
+.why-choose-grid > .grid-item:nth-child(2) .grid-card .card-tit {
+    color: #214a81 ;
+    font-size: 23px ;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin: 0.5rem ;
+}
+.why-choose-grid > .grid-item:nth-child(2) .grid-card .card-txt {
+    color: #fff ;
+    font-size: 17.2px ;
+    padding: 0.5rem
+}
+
+
+@media (max-width: 500px) {
+    .why-choose-grid > .grid-item:nth-child(1) p {
+        font-size: 30px;
+    }
+    .why-choose-grid > .grid-item:nth-child(2) {
+        grid-column: 1/10;   
+    }
+    .why-choose-grid > .grid-item:nth-child(2) .grid-card {
+        width: 100%;
+    }
+}

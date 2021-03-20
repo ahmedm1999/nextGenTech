@@ -1,0 +1,17 @@
+.apps-grid > .grid-item:nth-child(2) img {
+    width: 500px;
+    height: 500px;
+}
+@media (max-width: 550px) {
+    .apps-grid > .grid-item:nth-child(2) img {
+        width: 400px;
+        height: 400px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 400px) {
+    .apps-grid > .grid-item:nth-child(2) img {
+        width: 300px;
+        height: 300px;
+    }
+}

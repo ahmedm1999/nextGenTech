@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact NextGenTech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="../services/web_dev/web_development_style.css">
+     <style>
+        .welcome-area-grid > .grid-item:nth-child(2) {
+            grid-column: 2 / 9;
+            grid-row: 2/3;
+        }
+        .container {
+            margin-top: -5rem;
+        }
+        @media (max-width: 400px) {
+            .container {
+            margin-top: -1rem;
+        }
+        }
+        .welcome-area-grid {
+            height: 500px;
+        }
+        .welcome-area-grid > .grid-item:nth-child(2) {
+            margin-top: -2rem;
+        }
+     </style>
+</head>
+<body>
+    <section class="main-landing">
+        <!-- navbar -->
+        <div class="nav-bar">
+            <i class="fas fa-bars" id="open-side-down"></i>
+            <div class="nav-bar-logo">
+                <img src="../pic/logomaindes.png" alt="logo" width="100" height="100">
+                <p class="logo-txt">NextGenTech</p>
+            </div>
+            <!-- navbar items -->
+            <ul class="nav-bar-items">
+                <li><a href="../../index.html">Home</a></li>
+                <li id="serv">Services <i class="fas fa-chevron-down" style="margin-left: 10px;" id="arrow"></i>
+                    
+                </li>
+                <li><a href="../about/index.html">About Us</a></li>
+                <li><a href="#"><button class="contact-btn">Contact Us</button></a></li>
+                
+            </ul>
+        </div>
+    </section>
+    <section id="sideDownSec">
+        <div class="sidedown" id="side-down">
+            <i class="fas fa-times" id="close-side-down"></i>
+            <ul>
+                <h2>Pages</h2>
+                <a href="../index.html"><li>Home</li></a>
+                <a id="side-menu-serv" data-open="false"><li>Services <i class="fas fa-chevron-down" id="side-arrow" style="margin-left: 10px;"></i></li></a>
+                <ul class="services" id="side-serv">
+                    <a href="../services/web_dev/index.html">
+                        <li>Web Development</li>
+                    </a>
+                    <a href="../services/mobile_dev/index.html">
+                        <li>Mobile Development</li>
+                    </a>
+                    <a href="../services/desktopDev/index.html">
+                        <li>Desktop Apps Development</li>
+                    </a>
+                    <a href="../services/seo/index.html"><li>Search Engine Optimization(SEO)</li></a>
+                    <a href="../services/qa_test/index.html">
+                        <li>Quality Assurance & Testing</li>
+                    </a>
+                    <a href="#">
+                        <li>Social Media & Digital Marketing</li>
+                    </a>
+                </ul>
+                <a href="../about/index.html"><li>About Us</li></a>
+                <a href="#"><li><button class="contact-btn">Contact Us</button></li></a>
+                <h2>social</h2>
+                <a href="#"><li>Facebook</li></a>
+                <a href="#"><li>Instagram</li></a>
+                <a href="#"><li>Twitter</li></a>
+                <h2>Links</h2>
+                <a href="#"><li>Privacy & Policy</li></a>
+                <a href="#"><li>Careers</li></a>
+                <a href="#"><li>Partners</li></a>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Services drop Down -->
+    <div class="drop-dwon-grid" id="drop" data-open="false">
+        <div class="grid-item">
+            <a href="../services/web_dev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../pic/seo.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Web Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../services/mobile_dev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../pic/test (1).png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Mobile Apps Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../services/desktopDev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../pic/desktop-computer.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Desktop Apps Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../services/seo/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../pic/seo-search-symbol.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Search Engine Optimization</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../services/qa_test/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../pic/test.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Quality Assurance & Testing</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../services/social_media/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../pic/bullhorn.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Social Media & Marketing</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <section class="welcome-area-grid">
+        <div class="grid-item">
+            <a href="../../index.html">Home </a><span>/ </span><a href="index.html">Contact</a>
+        </div>  
+        <div class="grid-item">
+            <p>Contact Our Team</p>
+            <p>You can tell us about your business needs, we listen to you and help you develop your business and ideas.</p>
+            
+        </div>
+    </section>
+    <div class="container" data-aos="fade-up" >
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <img src="../pic/paper-plane.png" alt="" width="200" height="200">
+  
+            <div class="info">
+              <div class="information">
+                <p>Irbid - Jordan</p>
+              </div>
+              <div class="information">
+                <p>nextg307@gmail.com</p>
+              </div>
+              <div class="information">
+                <p>+962 795 023 801</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="index.html" autocomplete="off">
+              <!-- <h3 class="title">Contact us</h3> -->
+              <div class="input-container">
+                <input type="text" name="name" class="input" required data-error="Please, enter your name"/>
+                <label for="">Name</label>
+                <span>Your name</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" required data-error="Please, enter your E-mail address to contact you"/>
+                <label for="">Email</label>
+                <span>Email</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" required data-error="Please Enter your phone number to contact you"/>
+                <label for="">Phone</label>
+                <span>Phone</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input" required data-error="Enter your idea text message to hear you!"></textarea>
+                <label for="">Text your idea !</label>
+                <span>Message</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="files-container">
+                <input type="file" id="file" multiple>
+                <label for="file" id="file-uploader">Attach File</label>
+                <!-- <div id="no-file" class="no-file">No file choosen</div> -->
+              </div>
+              <br/>
+              <div id="uploaded-files">
+                <ul class="file-container">
+                    <li id="default-file">No File(s) Chosen</li>
+                </ul>
+            </div>
+              <!-- <div class="priv">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, error.</div> -->
+              <input type="submit" value="Agree & Send" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <section class="footer-grid">
+          <div class="grid-item">
+              <div class="footer-logo">
+                  <img src="../pic/logomaindes.png" alt="logo">
+                  <h3>NextGenTech</h3>
+              </div>
+          </div>
+          <div class="grid-item">
+              <div class="footer-links">
+                  <h5>Pages</h5>
+                  <ul>
+                      <li><a href="../../index.html">Home</a></li>
+                      <li><a href="../about/index.html">About Us</a></li>
+                      <li><a href="index.html">Contact Us</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-links">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="../services/web_dev/index.html">Web Development</a></li>
+                    <li><a href="../services/mobile_dev/index.html">Mobile Apps Development</a></li>
+                    <li><a href="../services/desktopDev/index.html">Desktop Apps Development</a></li>
+                    <li> <a href="../services/seo/index.html">Search Engine Optimization(SEO) </a></li>
+                    <li> <a href="../services/qa/index.html">Quality Assurance & Testing</a> </li>
+                    <li> <a href="../services/media/index.html">Social Media & Digital Marketing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="footer-links">
+                <h5>Social</h5>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="footer-links">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#">Privacy & Policy</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <small class="copy-footer">&copy Copy Right Reserved <i class="fas fa-love"></i> <b>NEXTGENTECH</b> <span id="copy-year"></span></small>
+        </div>
+      </section>
+      <!-- Scripts -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    <script src="../app.js"></script>
+</body>
+</html> 

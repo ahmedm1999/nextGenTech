@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGenTech Web Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
+     <link rel="stylesheet" href="web_development_style.css">
+     <link rel="stylesheet" href="../mobile_dev/mobile_development_style.css">
+
+</head>
+<body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v9.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="116341136944431"
+theme_color="#9d8df7"
+logged_in_greeting="Hi! How can we help you? "
+logged_out_greeting="Hi! How can we help you? ">
+    </div>
+    <!-- main landing  -->
+    <section class="main-landing">
+        <!-- navbar -->
+        <div class="nav-bar">
+            <i class="fas fa-bars" id="open-side-down"></i>
+            <div class="nav-bar-logo">
+                <img src="pic/logomaindes.png" alt="logo" width="100" height="100">
+                <p class="logo-txt">NextGenTech</p>
+            </div>
+            <!-- navbar items -->
+            <ul class="nav-bar-items">
+                <li><a href="../../index.html">Home</a></li>
+                <li id="serv">Services <i class="fas fa-chevron-down" style="margin-left: 10px;" id="arrow"></i>
+                    
+                </li>
+                <li><a href="../../about/index.html">About Us</a></li>
+                <li><a href="../../contact/index.html"><button class="contact-btn">Contact Us</button></a></li>
+                
+            </ul>
+        </div>
+    </section>
+    <section class="welcome-area-grid">
+        <div class="grid-item">
+            <a href="../../index.html">Home </a><span>/ Services / </span><a href="index.html">Web Development</a>
+        </div>  
+        <div class="grid-item">
+            <p>Web Design and Development.</p>
+            <p>We design, build and develop websites and smart web applications that fit your business needs and projects with the latest technologies and long and high experience.</p>
+            
+        </div>
+        <div class="grid-item">
+            <a href="../../contact/index.html"><button id="welc-area-btn">Get Started!</button></a>
+        </div>
+        <div class="grid-item">
+            <img src="../../pic/web-app-dev-banner@2x.png" alt="">
+        </div>
+    </section>
+    <!-- Sidw Down -->
+    <section id="sideDownSec">
+        <div class="sidedown" id="side-down">
+            <i class="fas fa-times" id="close-side-down"></i>
+            <ul>
+                <h2>Pages</h2>
+                <a href="../../index.html"><li>Home</li></a>
+                <a id="side-menu-serv" data-open="false"><li>Services <i class="fas fa-chevron-down" id="side-arrow" style="margin-left: 10px;"></i></li></a>
+                <ul class="services" id="side-serv">
+                    <a href="index.html">
+                        <li>Web Development</li>
+                    </a>
+                    <a href="../mobile_dev/index.html">
+                        <li>Mobile Development</li>
+                    </a>
+                    <a href="../desktopDev/index.html">
+                        <li>Desktop Apps Development</li>
+                    </a>
+                    <a href="../seo/index.html"><li>Search Engine Optimization(SEO)</li></a>
+                    <a href="../qa_test/index.html">
+                        <li>Quality Assurance & Testing</li>
+                    </a>
+                    <a href="#">
+                        <li>Social Media & Digital Marketing</li>
+                    </a>
+                </ul>
+                <a href="../../about/index.html"><li>About Us</li></a>
+                <a href="../../contact/index.html"><li><button class="contact-btn">Contact Us</button></li></a>
+                <h2>social</h2>
+                <a href="#"><li>Facebook</li></a>
+                <a href="#"><li>Instagram</li></a>
+                <a href="#"><li>Twitter</li></a>
+                <h2>Links</h2>
+                <a href="#"><li>Privacy & Policy</li></a>
+                <a href="#"><li>Careers</li></a>
+                <a href="#"><li>Partners</li></a>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Services drop Down -->
+    <div class="drop-dwon-grid" id="drop" data-open="false">
+        <div class="grid-item">
+            <a href="../web_dev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/seo.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Web Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../mobile_dev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/test (1).png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Mobile Apps Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../desktopDev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/desktop-computer.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Desktop Apps Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../seo/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/seo-search-symbol.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Search Engine Optimization</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../qa_test/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/test.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Quality Assurance & Testing</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../social_media/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/bullhorn.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Social Media & Marketing</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="svg">
+        <path fill="#0e141e" fill-opacity="1" d="M0,288L1440,0L1440,0L0,0Z"></path>
+    </svg>
+    
+    <section class="e-comm-grid">
+        <div class="grid-item">
+            E-Commerce Systems.
+        </div>
+        <div class="grid-item">
+            <img src="https://www.flaticon.com/premium-icon/icons/svg/2821/2821836.svg" style="border: none; border-radius: 0;" alt="">
+            <p>At <span style="color: #133a6d; font-weight: 600;">NextGenTech</span>, we have a team with experience in the field of e-commerce using many equipment, security protocols and integrated payment systems for a unique e-commerce experience.</p>
+        </div>
+    </section>
+    <section class="apps-grid">
+        <div class="grid-item">
+            Web Applications.
+        </div>
+        <div class="grid-item">
+            <img src="pic/01.png" alt="">
+            <p>At <span style="color: #133a6d; font-weight: 600;">NextGenTech</span>, web applications are developed by designers and developers with a high degree of experience necessary to supplement and improve your business to the best level. The work team has succeeded in providing many complex projects and applications to business owners.</p>
+        </div>
+    </section>
+    <section class="cms-grid">
+        <div class="grid-item">
+            CONTENT MANAGMENT SYSTEMS (CMSs).
+        </div>
+        <div class="grid-item">
+            <img src="https://www.flaticon.com/premium-icon/icons/svg/2645/2645757.svg" alt="">
+            <p>Content management systems are one of the most important parts of any system. At <span style="color: #133a6d; font-weight: 600;">NextGenTech</span> , we develop content management systems that suit the needs and requirements of your business, to organize your management of your business requirements and synchronize with the changes around you.</p>
+        </div>
+    </section>
+    <!-- --------- Boost ---------- -->
+    <section class="boost-grid">
+        <div class="grid-item">
+            <div class="boost-img">
+                <img src="pic/startup.png" alt="boost" width="200" height="200">
+            </div>
+            <div class="boost-txt">
+                <p>Booooost Your Business Now !</p>
+                <p>
+                    A Better Website Means Better User Experience
+                </p>
+            </div>
+            <div class="boost-btn">
+                <a href="../../contact/index.html"><button class="btn">Let's talk</button></a>
+            </div>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0e141e" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,192C640,213,800,203,960,186.7C1120,171,1280,149,1360,138.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>    <section class="features-grid">
+    <!-- -------- Tech Use -->
+    <section class="tech-grid">
+        <div class="grid-item">
+            <p>
+                Technology we work with.
+            </p>
+            <p>
+                As a custom software development team, NextGenTech makes use of an extensive set of programming languages, frameworks, libraries, and tools for projects to inject innovation into our real-life projects.
+            </p>
+        </div>
+        <div class="grid-item">
+            <i  class="devicon-javascript-plain"></i>
+            <i class="devicon-dot-net-plain-wordmark"></i>
+            <i class="devicon-html5-plain-wordmark"></i>
+            <i class="devicon-css3-plain-wordmark"></i>
+            <i class="devicon-angularjs-plain"></i>
+            <i class="devicon-csharp-plain"></i>
+            <i class="devicon-bootstrap-plain-wordmark"></i>
+            <i class="devicon-mysql-plain-wordmark"></i>
+            <i class="devicon-typescript-plain"></i>
+            <i class="devicon-visualstudio-plain"></i>
+            <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
+            <i class="devicon-jquery-plain-wordmark"></i>
+            <i class="devicon-oracle-original"></i>
+            <i class="devicon-php-plain"></i>
+            <i class="devicon-wordpress-plain-wordmark"></i>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0e141e" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,192C640,213,800,203,960,186.7C1120,171,1280,149,1360,138.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+    <div class="container">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+                Have Some Feedback for as ?
+                Want to know more ?
+            </p>
+  
+            <div class="info">
+              <div class="information">
+                <p>Irbid - Jordan</p>
+              </div>
+              <div class="information">
+                <p>nextg307@gmail.com</p>
+              </div>
+              <div class="information">
+                <p>+962 795 023 801</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="index.html" autocomplete="off">
+              <!-- <h3 class="title">Contact us</h3> -->
+              <div class="input-container">
+                <input type="text" name="name" class="input" required data-error="Please, enter your name"/>
+                <label for="">Name</label>
+                <span>Your name</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" required data-error="Please, enter your E-mail address to contact you"/>
+                <label for="">Email</label>
+                <span>Email</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" required data-error="Please Enter your phone number to contact you"/>
+                <label for="">Phone</label>
+                <span>Phone</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input" required data-error="Enter your idea text message to hear you!"></textarea>
+                <label for="">Text your idea !</label>
+                <span>Message</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="files-container">
+                <input type="file" id="file" multiple>
+                <label for="file" id="file-uploader">Attach File(s)</label>
+                <!-- <div id="no-file" class="no-file">No file choosen</div> -->
+              </div>
+              <br/>
+              <div id="uploaded-files">
+                  <ul class="file-container">
+                      <li id="default-file">No File(s) Chosen</li>
+                  </ul>
+              </div>
+              <!-- <div class="priv">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, error.</div> -->
+              <input type="submit" value="Agree & Send" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer-line"></div>
+      <section class="footer-grid">
+          <div class="grid-item">
+              <div class="footer-logo">
+                  <img src="pic/logomaindes.png" alt="logo">
+                  <h3>NextGenTech</h3>
+              </div>
+          </div>
+          <div class="grid-item">
+              <div class="footer-links">
+                  <h5>Pages</h5>
+                  <ul>
+                      <li><a href="../../index.html">Home</a></li>
+                      <li><a href="../../about/index.html">About Us</a></li>
+                      <li><a href="../../contact/index.html">Contact Us</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-links">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="../services/web_dev/index.html">Web Development</a></li>
+                    <li><a href="../mobile_dev/index.html">Mobile Apps Development</a></li>
+                    <li><a href="../desktopDev/index.html">Desktop Apps Development</a></li>
+                    <li> <a href="../seo/index.html">Search Engine Optimization(SEO) </a></li>
+                    <li> <a href="../qa_test/index.html">Quality Assurance & Testing</a> </li>
+                    <li> <a href="#">Social Media & Digital Marketing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="footer-links">
+                <h5>Social</h5>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="footer-links">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#">Privacy & Policy</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <small class="copy-footer">&copy Copy Right Reserved <i class="fas fa-love"></i> <b>NEXTGENTECH</b> <span id="copy-year"></span></small>
+        </div>
+      </section>
+    <!-- Scripts -->
+    <script src="web_development_app.js"></script>
+</body>
+</html>

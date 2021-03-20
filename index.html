@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGenTech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="services/web_dev/web_development_style.css">
+     <link rel="stylesheet" href="services/mobile_dev/mobile_development_style.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v9.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="116341136944431"
+theme_color="#9d8df7"
+logged_in_greeting="Hi! How can we help you? "
+logged_out_greeting="Hi! How can we help you? ">
+    </div>
+    <!-- main landing  -->
+    <!-- main landing  -->
+    <section class="main-landing">
+        <!-- navbar -->
+        <div class="nav-bar">
+            <i class="fas fa-bars" id="open-side-down"></i>
+            <div class="nav-bar-logo">
+                <img src="pic/logomaindes.png" alt="logo" width="100" height="100">
+                <p class="logo-txt">NextGenTech</p>
+            </div>
+            <!-- navbar items -->
+            <ul class="nav-bar-items">
+                <li><a href="index.html">Home</a></li>
+                <li id="serv">Services <i class="fas fa-chevron-down" style="margin-left: 10px;" id="arrow"></i>
+                    
+                </li>
+                <li><a href="about/index.html">About Us</a></li>
+                <li><a href="contact/index.html"><button class="contact-btn">Contact Us</button></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="welcome-area-grid">
+        <div class="grid-item">
+            <a href="index.html">Home </a>
+        </div>  
+        <div class="grid-item">
+            <p>A Software Development Freelancing Team!<br/>
+                ready to serve you.</p>
+            <p>While we share our knowledge and experience, we listen hard to understand your needs.
+                We deliver the Software You need, No more, No less.</p>
+            
+        </div>
+        <div class="grid-item">
+            <p> 
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Creativity.", "Confidence.", "Honesty."]'>
+                  <span class="wrap"></span>
+                  
+                </a>
+            </p>
+        </div>
+        <div class="grid-item">
+            <img src="pic/banner_img.png" alt="">
+        </div>
+    </section>
+    <!-- SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0e141e" fill-opacity="1" d="M0,288L1440,0L1440,0L0,0Z"></path>
+    </svg>
+    <!-- Services drop Down -->
+    <div class="drop-dwon-grid" id="drop" data-open="false">
+        <div class="grid-item">
+            <a href="services/web_dev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="pic/seo.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Web Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="services/mobile_dev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="pic/test (1).png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Mobile Apps Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="services/desktopDev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="pic/desktop-computer.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Desktop Apps Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="services/seo/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="pic/seo-search-symbol.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Search Engine Optimization</p>
+                    </div>
+                </div>
+            </a>
+            <a href="services/qa_test/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="pic/test.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Quality Assurance & Testing</p>
+                    </div>
+                </div>
+            </a>
+            <a href="services/social_media/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="pic/bullhorn.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Social Media & Marketing</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Side Down Menu -->
+    <section id="sideDownSec">
+        <div class="sidedown" id="side-down">
+            <i class="fas fa-times" id="close-side-down"></i>
+            <ul>
+                <h2>Pages</h2>
+                <a href="index.html"><li>Home</li></a>
+                <a id="side-menu-serv" data-open="false"><li>Services <i class="fas fa-chevron-down" id="side-arrow" style="margin-left: 10px;"></i></li></a>
+                <ul class="services" id="side-serv">
+                    <a href="services/web_dev/index.html">
+                        <li>Web Development</li>
+                    </a>
+                    <a href="services/mobile_dev/index.html">
+                        <li>Mobile Development</li>
+                    </a>
+                    <a href="#">
+                        <li>Desktop Apps Development</li>
+                    </a>
+                    <a href="services/seo/index.html"><li>Search Engine Optimization(SEO)</li></a>
+                    <a href="services/qa_test/index.html">
+                        <li>Quality Assurance & Testing</li>
+                    </a>
+                    <a href="#">
+                        <li>Social Media & Digital Marketing</li>
+                    </a>
+                </ul>
+                <a href="about/index.html"><li>About Us</li></a>
+                <a href="contact/index.html"><li><button class="contact-btn">Contact Us</button></li></a>
+                <h2>social</h2>
+                <a href="#"><li>Facebook</li></a>
+                <a href="#"><li>Instagram</li></a>
+                <a href="#"><li>Twitter</li></a>
+                <h2>Links</h2>
+                <a href="#"><li>Privacy & Policy</li></a>
+                <a href="#"><li>Careers</li></a>
+                <a href="#"><li>Partners</li></a>
+            </ul>
+        </div>
+    </section>
+    <section class="care-grid">
+        <div class="grid-item">
+            <p class="care-txt">
+                We care about the success of your business, projects and goals.
+                Our team work has the <br/><span style="color:#214a81; letter-spacing: 3px;">necessary knowledge & experience<br/></span> to achieve your goals, through our work based on:
+            </p>
+        </div>
+        <div class="grid-item">
+            <div class="grid-card">
+                <div class="card-img">
+                    <img src="pic/card04.png" alt="card-1">
+                </div>
+                <div class="card-tit">
+                    Work As a Team.
+                </div>
+                <div class="card-txt">
+                    Working as a team is one of our most important advantages, which leads to the generation of new and diverse ideas, speed of delivery and improvement of the quality of our products.
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="grid-card">
+                <div class="card-img">
+                    <img src="pic/card03.png" alt="card-1">
+                </div>
+                <div class="card-tit">
+                    Achieve your Goals.
+                </div>
+                <div class="card-txt">
+                    We embody your idea and business in our products, to communicate it to the people concerned and attract their interest, where the product is simple and fits your needs.                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="grid-card">
+                <div class="card-img">
+                    <img src="pic/card05.png" alt="card-1">
+                </div>
+                <div class="card-tit">
+                    Business Creativity.
+                </div>
+                <div class="card-txt">
+                    Our creativity at work is one of our most important features, works and designs that suit your high taste, creative ideas that suit your business and achieve your desired goals.                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="grid-card">
+                <div class="card-img">
+                    <img src="pic/card02.png" alt="card-1">
+                </div>
+                <div class="card-tit">
+                    Customer Confidence.
+                </div>
+                <div class="card-txt">
+                    We care that you have high confidence in our work and in us, and it is one of our most important principles. Your information and business secrets are kept in complete confidentiality.                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="roadmap-grid">
+        <div class="grid-item">
+            <p>Custom software development roadmap.</p>
+            <p>NextGenTech develops software products from the ground up as well as takes up development at any software lifecycle stage.</p>
+        </div>
+        <div class="grid-item">
+            <div class="roads">
+                <div class="road" data-road="0">
+                    <div class="road-tit" >
+                        <div class="road-img-tit">
+                            <span></span><img src="pic/loupe.png" alt=""> 
+                            <p>Requirements gathering</p></span>
+                        </div>
+                        
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                    <div class="road-hidden" data-hidden="true">
+                        We assign business analysts with the required domain knowledge to elicit, analyze, validate, and document all functional and nonfunctional requirements, data flows and UI components, product vision, and project scope.
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------ -->
+            <div class="roads">
+                <div class="road" data-road="1">
+                    <div class="road-tit" >
+                        <div class="road-img-tit">
+                            <span></span><img src="pic/checklist.png" alt=""> 
+                            <p>Project planning</p>
+                        </div>
+                        
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                    <div class="road-hidden" data-hidden="true">
+                        We deliver specifications, wireframes, and prototypes to get early feedback and test the solutions in progress.                     </div>
+                </div>
+            </div>
+            <!-- ---------------------- -->
+            <div class="roads">
+                <div class="road" data-road="2">
+                    <div class="road-tit" >
+                        <div class="road-img-tit">
+                            <span></span><img src="pic/development.png" alt=""> 
+                            <p>Custom app development</p>
+                        </div>
+                        
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                    <div class="road-hidden" data-hidden="true">
+                        NextGenTech develops custom web, desktop, and mobile solutions, both native and platform-agnostic.taking scalability, robustness, and customizability into account.                     </div>
+                </div>
+            </div>
+            <!-- ---------------------- -->
+            <div class="roads">
+                <div class="road" data-road="3">
+                    <div class="road-tit" >
+                        <div class="road-img-tit">
+                            <span></span><img src="pic/analyze.png" alt=""> 
+                            <p>QA Testing</p>
+                        </div> 
+                        
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                    <div class="road-hidden" data-hidden="true">
+                        An integral part of our process from the very beginning Identify risks onalyze and adjust.olient'sexpectotions ond builds trust with your customers.
+                    </div>
+            </div>
+            <!-- ---------------------- -->
+            <div class="roads">
+                <div class="road" data-road="4">
+                    <div class="road-tit" >
+                        <div class="road-img-tit">
+                            <img src="pic/customer-support.png" alt=""> 
+                        <p>Maintenance and support</p>
+                        </div>
+                        
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                    <div class="road-hidden" data-hidden="true">
+                        We offer 3 levels of support for applications developed by NextGenTech or by any third-party vendor. NextGenTech solves challenges of any complexity: application upgrades and functional improvements, performance monitoring and security audit.OS and server migration, workarounds and hotfixes.                </div>
+            </div>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0e141e" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,192C640,213,800,203,960,186.7C1120,171,1280,149,1360,138.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>    <section class="features-grid">
+        <div class="features-txt">
+            <p>Our features</p>
+            <p>Our work is characterized by several specifications, including:</p>
+        </div>
+        <div class="container-feat">
+            <div class="card" data-open="false">
+              <h3 class="title">Responsive Designs.</h3>
+              <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+              </div>
+              <div class="circle-card">
+                With experts "Front-end" developers you can have a site that fits all screen sizes.
+              </div>
+              <i class="fas fa-times closeMobCard"></i>
+            </div>
+            <div class="card" data-open="false">
+                <h3 class="title">Security Services.</h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="circle-card">
+                  We guarantee that you will receive a secure product that is not hackable or be down
+                
+                </div>
+                <i class="fas fa-times closeMobCard"></i>
+              </div>
+              <div class="card" data-open="false">
+                <h3 class="title">Maintenes</h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="circle-card">
+                    Continuous maintenance and modification of our products until they reach the level you want.
+                
+                </div>
+                <i class="fas fa-times closeMobCard"></i>
+              </div>
+            <div class="card" data-open="false">
+              <h3 class="title">specific time</h3>
+              <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+              </div>
+              <div class="circle-card">
+                Complete our work within a specified period of time.
+             
+              </div>
+              <i class="fas fa-times closeMobCard"></i>
+            </div>
+            <div class="card" data-open="false">
+              <h3 class="title">QA & Testing</h3>
+              <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+              </div>
+              <div class="circle-card" style="margin-right: auto;">
+                Before we release your software, it goes through a thorough testing process to ensure it is working in the intended manner .              
+              </div>
+              <i class="fas fa-times closeMobCard"></i>
+            </div>
+          </div>
+    </section>
+    <section class="mobile-grid d-none" id="mob-grid">
+        <div class="grid-item">
+            <div class="mob-card" data-open="false">
+                <div class="mob-card-tit">
+                    Responsive Designs.
+                </div>
+                <div class="card-stick"></div>
+                <div class="mob-card-txt">
+                    With experts "Front-end" developers you can have a site that fits all screen sizes.                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="mob-card" data-open="false">
+                <div class="mob-card-tit">
+                    Security Services.
+                </div>
+                <div class="card-stick"></div>
+                <div class="mob-card-txt">
+                    We guarantee that you will receive a secure product that is not hackable or be down                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="mob-card" data-open="false">
+                <div class="mob-card-tit">
+                    Maintenes
+                </div>
+                <div class="card-stick"></div>
+                <div class="mob-card-txt">
+                    Continuous maintenance and modification of our products until they reach the level you want.
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="mob-card" data-open="false">
+                <div class="mob-card-tit">
+                    Specific Time
+                </div>
+                <div class="card-stick"></div>
+                <div class="mob-card-txt">
+                    Before we release your software, it goes through a thorough testing process to ensure it is working in the intended manner .                
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="mob-card" data-open="false">
+                <div class="mob-card-tit">
+                    QA & Testing
+                </div>
+                <div class="card-stick"></div>
+                <div class="mob-card-txt">
+                    Before we release your software, it goes through a thorough testing process to ensure it is working in the intended manner .                
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0e141e" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,192C640,213,800,203,960,186.7C1120,171,1280,149,1360,138.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+    <section class="we-love-grid">
+        <div class="grid-item">
+            <p class="we-txt">We love building meaningful and useful software products.</p>
+            <a href="contact/index.html"><button class="we-btn">Get Started!</button></a>
+        </div>
+    </section>
+    <section class="practical-grid">
+        <div class="grid-item">
+            <p>NextGenTech</p>
+            <p>Design Your Work And Thoughts, Achieve Your Goals, Improve Your Business &
+                Grow Your Network.</p>
+        </div>
+        <div class="grid-item">
+            <div class="home-area" id="particles-js" ></div>
+        </div>
+    </section> 
+    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 320"><path fill="#0e141e" fill-opacity="1" d="M0,32L80,53.3C160,75,320,117,480,122.7C640,128,800,96,960,74.7C1120,53,1280,43,1360,37.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <div class="container" data-aos="fade-up" data-aos-duration="500">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+                Have Some Feedback for as ?
+                Want to know more ?
+            </p>
+  
+            <div class="info">
+              <div class="information">
+                <p>Irbid - Jordan</p>
+              </div>
+              <div class="information">
+                <p>nextg307@gmail.com</p>
+              </div>
+              <div class="information">
+                <p>+962 795 023 801</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="index.html" autocomplete="off">
+              <!-- <h3 class="title">Contact us</h3> -->
+              <div class="input-container">
+                <input type="text" name="name" class="input" required data-error="Please, enter your name"/>
+                <label for="">Name</label>
+                <span>Your name</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" required data-error="Please, enter your E-mail address to contact you"/>
+                <label for="">Email</label>
+                <span>Email</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" required data-error="Please Enter your phone number to contact you"/>
+                <label for="">Phone</label>
+                <span>Phone</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input" required data-error="Enter your idea text message to hear you!"></textarea>
+                <label for="">Text your idea !</label>
+                <span>Message</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="files-container">
+                <input type="file" id="file" multiple>
+                <label for="file" id="file-uploader">Attach File</label>
+                <!-- <div id="no-file" class="no-file">No file choosen</div> -->
+              </div>
+              <br/>
+              <div id="uploaded-files">
+                <ul class="file-container">
+                    <li id="default-file">No File(s) Chosen</li>
+                </ul>
+            </div>
+              <!-- <div class="priv">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, error.</div> -->
+              <input type="submit" value="Agree & Send" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <section class="footer-grid">
+          <div class="grid-item">
+              <div class="footer-logo">
+                  <img src="pic/logomaindes.png" alt="logo">
+                  <h3>NextGenTech</h3>
+              </div>
+          </div>
+          <div class="grid-item">
+              <div class="footer-links">
+                  <h5>Pages</h5>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about/index.html">About Us</a></li>
+                      <li><a href="contact/index.html">Contact Us</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-links">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="services/web_dev/index.html">Web Development</a></li>
+                    <li><a href="services/mobile_dev/index.html">Mobile Apps Development</a></li>
+                    <li><a href="services/desktopDev/index.html">Desktop Apps Development</a></li>
+                    <li> <a href="services/seo/index.html">Search Engine Optimization(SEO) </a></li>
+                    <li> <a href="services/qa_test/index.html">Quality Assurance & Testing</a> </li>
+                    <li> <a href="#">Social Media & Digital Marketing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="footer-links">
+                <h5>Social</h5>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="footer-links">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#">Privacy & Policy</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <small class="copy-footer">&copy Copy Right Reserved <i class="fas fa-love"></i> <b>NEXTGENTECH</b> <span id="copy-year"></span></small>
+        </div>
+      </section>
+      <!-- Scripts -->
+    <script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
